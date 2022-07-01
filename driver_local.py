@@ -85,10 +85,16 @@ def main():
                         print("FOUND")
                         # Create a list to capture the specific column data we want
                         found_data = []
-                        found_data.append(content[0])
-                        found_data.append(content[1])
-                        found_data.append(content[2])
-                        found_data.append(content[3])
+                        # Save entire row
+                        for i in content:
+                            found_data.append(i)
+
+                        # OR to only save specific columns
+                        # found_data.append(content[0])
+                        # found_data.append(content[1])
+                        # found_data.append(content[2])
+                        # found_data.append(content[3])
+
                         # Append found_data to matches list
                         matches.append(found_data)
                 if not found:
