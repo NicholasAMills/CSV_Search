@@ -119,7 +119,6 @@ def main():
             print("===============COMPLETE===================")
             stop = timeit.default_timer()
             print("Execution time: ", stop - start)
-            print(fileone_list[0], filetwo_list[1])
         except Exception as e:
             print("Exception occurred in finally: " + str(e))
 
